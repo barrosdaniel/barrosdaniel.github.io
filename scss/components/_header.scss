@@ -1,0 +1,205 @@
+.header {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mq('sm') {
+    margin-top: 3rem;
+  }
+
+  @include mq('md') {
+    margin-top: 4rem;
+  }
+
+  @include mq('lg') {
+    margin-top: 5rem;
+  }
+
+  @include mq('xl') {
+    margin-top: 6rem;
+  }
+
+  &__colour-container {
+    align-self: flex-end;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    z-index: 10;
+  }
+
+  &__colour {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid $colour-white;
+    cursor: pointer;
+    transition: 0.2s all;
+
+    &:last-child {
+      margin-right: 0.5rem;
+    }
+
+    @include mq('md') {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &--blue {
+      background-color: $colour-blue-light;
+    }
+
+    &--red {
+      background-color: $colour-red-light;
+    }
+
+    &--yellow {
+      background-color: $colour-yellow-light;
+    }
+
+    &--green {
+      background-color: $colour-green-light;
+    }
+
+    &--cyan {
+      background-color: $colour-cyan-light;
+    }
+
+    &--purple {
+      background-color: $colour-purple-light;
+    }
+  }
+
+  &__avatar-container {
+    width: 12rem;
+    height: 12rem;
+    clip-path: circle(50% at 50% 50%);
+    border-radius: 50%;
+    overflow: hidden;
+
+    @include mq('sm') {
+      width: 14rem;
+      height: 14rem;
+    }
+
+    @include mq('md') {
+      width: 16rem;
+      height: 16rem;
+    }
+
+    @include mq('lg') {
+      width: 18rem;
+      height: 18rem;
+    }
+
+    @include mq('xl') {
+      width: 19rem;
+      height: 19rem;
+    }
+  }
+
+  &__avatar {
+    height: 100%;
+    transform: scale(1.4);
+    backface-visibility: hidden;
+  }
+
+  &__title {
+    font-size: 4rem;
+    margin-top: 1rem;
+    font-weight: 300;
+
+    @include mq('sm') {
+      font-size: 5rem;
+      margin-top: 1.25rem;
+    }
+
+    @include mq('md') {
+      font-size: 6rem;
+      margin-top: 1.5rem;
+    }
+
+    @include mq('lg') {
+      font-size: 7rem;
+      margin-top: 1.75rem;
+    }
+
+    @include mq('xl') {
+      font-size: 8rem;
+      margin-top: 2rem;
+    }
+  }
+
+  &__subtitle {
+    margin-top: -0.5rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
+
+    @include mq('sm') {
+      margin-top: -1rem;
+      font-size: 1.5rem;
+    }
+
+    @include mq('md') {
+      margin-top: -1.25rem;
+      font-size: 1.6rem;
+    }
+
+    @include mq('lg') {
+      margin-top: -1.5rem;
+      font-size: 1.8rem;
+    }
+
+    @include mq('xl') {
+      margin-top: -2rem;
+      font-size: 2rem;
+    }
+  }
+
+  &__paragraph {
+    width: 90%;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+
+    @include mq('sm') {
+      margin-top: 1.25rem;
+      font-size: 1.4rem;
+    }
+
+    @include mq('md') {
+      width: 85%;
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    @include mq('lg') {
+      width: 82.5%;
+      margin-top: 1.75rem;
+      font-size: 1.7rem;
+    }
+
+    @include mq('xl') {
+      width: 80%;
+      margin-top: 2rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__link {
+    color: $colour-secondary-extra-light;
+    transition: all 0.2s;
+    position: relative;
+    z-index: 3;
+
+    &:hover {
+      color: $colour-secondary;
+    }
+  }
+}

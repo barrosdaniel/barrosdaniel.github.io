@@ -1,0 +1,54 @@
+.footer {
+  margin: 2rem auto;
+  text-align: center;
+
+
+  @include mq('md') {
+    margin: 3rem auto;
+  }
+
+  @include mq('lg') {
+    margin: 3.5rem auto;
+  }
+
+  @include mq('xl') {
+    margin: 4rem auto;
+  }
+
+  &__social-link {
+    margin: 0 1rem;
+    position: relative;
+    z-index: 5;
+
+    &:hover .footer__social-icon {
+      color: $colour-gray-light;
+      transform: scale(1.2);
+    }
+
+  }
+
+  &__social-icon {
+    color: $colour-white;
+    transition: 0.1s all;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  &__copyright {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+
+    @include mq('md') {
+      margin-top: 1.5rem;
+      font-size: 1.4rem;
+    }
+
+    @include mq('lg') {
+      margin-top: 1.75rem;
+    }
+
+    @include mq('xl') {
+      margin-top: 2rem;
+    }
+  }
+}

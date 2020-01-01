@@ -1,0 +1,64 @@
+/* ======================================================================
+VARIABLES
+====================================================================== */
+// Colour Variables
+$colour-white: #f7f7f7;
+$colour-black: #111;
+
+$colour-blue-dark: #001840;
+$colour-blue-light: #002c73;
+$colour-red-dark: #400000;
+$colour-red-light: #730000;
+$colour-yellow-dark: #403f00;
+$colour-yellow-light: #6f7300;
+$colour-green-dark: #024000;
+$colour-green-light: #00730f;
+$colour-cyan-dark: #003f40;
+$colour-cyan-light: #006d73;
+$colour-purple-dark: #40003c;
+$colour-purple-light: #730060;
+
+$colour-gray: #808080;
+$colour-gray-extra-light: lighten($colour-gray, 20%);
+$colour-gray-light: lighten($colour-gray, 10%);
+$colour-gray-dark: darken($colour-gray, 20%);
+$colour-gray-extra-dark: darken($colour-gray, 30%);
+
+$colour-primary: #0053d9;
+$colour-primary-extra-light: lighten($colour-primary, 20%);
+$colour-primary-light: lighten($colour-primary, 10%);
+$colour-primary-dark: darken($colour-primary, 20%);
+$colour-primary-extra-dark: darken($colour-primary, 30%);
+
+$colour-secondary: #d90028;
+$colour-secondary-extra-light: lighten($colour-secondary, 20%);
+$colour-secondary-light: lighten($colour-secondary, 10%);
+$colour-secondary-dark: darken($colour-secondary, 20%);
+$colour-secondary-extra-dark: darken($colour-secondary, 30%);
+
+$colour-tertiary: #d9c300;
+$colour-tertiary-extra-light: lighten($colour-tertiary, 20%);
+$colour-tertiary-light: lighten($colour-tertiary, 10%);
+$colour-tertiary-dark: darken($colour-tertiary, 10%);
+$colour-tertiary-extra-dark: darken($colour-tertiary, 20%);
+
+
+
+// Font Stack
+$font-primary: 'Raleway',
+'Arial',
+sans-serif;
+
+
+
+// Box-shadow
+$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+
+
+
+// Breakpoints
+$break-xs: 575px;
+$break-sm: 576px;
+$break-md: 768px;
+$break-lg: 1024px;
+$break-xl: 1200px;
