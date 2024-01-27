@@ -394,7 +394,6 @@ a {
   .projects__tile {
     width: 80%;
     margin: 4rem auto 0;
-    border-radius: 1rem;
     padding: 2rem;
   }
 }
@@ -402,6 +401,12 @@ a {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   transform: translateY(-2px);
 }
+@media (min-width: 1024px) {
+    .projects__text {
+        margin-left: 2rem;
+        width: 70%
+    }
+  }
 .projects__tile-heading {
   display: flex;
   flex-direction: column;
@@ -497,8 +502,8 @@ a {
   }
 }
 .projects__image-container {
-  width: 100%;
-  overflow: hidden;
+    width: 100%;
+    overflow: hidden;
 }
 @media (min-width: 576px) {
   .projects__image-container {
@@ -515,7 +520,6 @@ a {
 @media (min-width: 1024px) {
   .projects__image-container {
     width: 25rem;
-    height: 18.75rem;
   }
 }
 .projects__image {
